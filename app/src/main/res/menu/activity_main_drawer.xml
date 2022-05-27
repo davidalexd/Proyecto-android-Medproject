@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navigation_home"
+            android:icon="@drawable/ic_ihome"
+            android:title="@string/title_home"
+            />
+        <item
+            android:id="@+id/navigation_perfil"
+            android:icon="@drawable/ic_iuser"
+            android:title="@string/title_perfil"/>
+        <item
+            android:id="@+id/navigation_myservice"
+            android:icon="@drawable/ic_myservice"
+            android:title="@string/title_myservice"  />
+        <item
+            android:id="@+id/navigation_my_appointments"
+            android:icon="@drawable/ic_calendar"
+            android:title="@string/title_appointment_name" />
+        <item
+            android:id="@+id/navigation_dashboard"
+            android:icon="@drawable/ic_idash"
+            android:title="@string/title_dashboard" />
+        <item
+            android:id="@+id/navigation_logout"
+            android:icon="@drawable/ic_logout"
+            android:onClick="logout"
+            android:title="@string/logout"
+            app:showAsAction="never" />
+    </group>
+</menu>

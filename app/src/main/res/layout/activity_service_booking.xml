@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ServiceBookingActivity"
+    android:paddingHorizontal="@dimen/horizontal_content_padding"
+    android:paddingVertical="@dimen/vertical_content_padding">
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/white"
+        android:drawableTop="@drawable/ic_iback"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvServiceBooking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_service_booking"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ScrollView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvServiceBooking">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Names -->
+            <TextView
+                style="@style/light_text"
+                android:layout_marginTop="20dp"
+                android:text="Nombre del servicio"
+                />
+            <TextView
+                android:id="@+id/etServiceName"
+                style="@style/label_style"
+                android:text="Clases de dibujo"/>
+
+
+            <TextView
+                style="@style/light_text"
+                android:layout_marginTop="20dp"
+                android:text="Nombre del especialista"
+                />
+            <TextView
+                android:id="@+id/etSpecialistName"
+                style="@style/label_style"
+                android:text="Jorge munoz"/>
+
+            <!-- Date -->
+            <TextView
+                android:text="Fecha"
+                style="@style/light_text"/>
+            <TextView
+                android:id="@+id/etDate"
+                style="@style/label_style"
+                android:text="11 de Marzo de 2022"/>
+
+            <TextView
+                android:text="Duracion"
+                style="@style/light_text"/>
+            <TextView
+                android:id="@+id/etDuration"
+                style="@style/label_style"
+                android:text="29 dias"/>
+            <!-- District -->
+            <TextView
+                android:text="Direccion o lugar de capacitacion"
+                style="@style/label_style"/>
+            <EditText
+                android:id="@+id/etDistrict"
+                style="@style/input_style"
+                android:hint="Rellene su direccion"/>
+
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/btnCheckout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button"
+        android:text="Reservar ahora"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

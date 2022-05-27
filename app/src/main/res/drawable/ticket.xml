@@ -1,0 +1,13 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <solid android:color="@color/bg_buttons"/>
+    <item android:name="android:background">@color/primary</item>
+    <padding
+        android:left="30dp"
+        android:top="10dp"
+        android:right="30dp"
+        android:bottom="30dp"
+        />
+    <corners
+        android:radius="30dp"/>
+</shape>

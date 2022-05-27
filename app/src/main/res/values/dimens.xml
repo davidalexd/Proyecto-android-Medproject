@@ -1,0 +1,12 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="label">20sp</dimen>
+    <dimen name="vertical_content_padding">30dp</dimen>
+    <dimen name="horizontal_content_padding">40dp</dimen>
+    <dimen name="text_small">17sp</dimen>
+
+
+    <dimen name="headerTextSize">25sp</dimen>
+    <dimen name="newsMoreTextSize">12sp</dimen>
+    <dimen name="loginViewsMargin">20dp</dimen>
+</resources>

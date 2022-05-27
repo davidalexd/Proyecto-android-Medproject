@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.perfil.Profile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+
+            <Button
+                android:id="@+id/Actualizar"
+                android:layout_width="217dp"
+                android:layout_height="61dp"
+                android:layout_marginTop="256dp"
+                android:text="Cargar Foto"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="0dp"
+                android:layout_height="270dp"
+                android:background="#011627"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/PImage"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/inom"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/UidDato"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="72dp"
+                    android:fontFamily="@font/nunito_font"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="24dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/PImage"
+                    app:layout_constraintVertical_bias="0.104" />
+
+                <TextView
+                    android:id="@+id/correo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_font"
+                    android:text="usuario@gmail.com"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/UidDato"
+                    app:layout_constraintVertical_bias="0.123" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="358dp"
+                android:layout_height="583dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+                app:layout_constraintVertical_bias="1.0">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="273dp"
+                    android:layout_height="28dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/nunito_font"
+                    android:text="Informacción de cuenta"
+                    android:textColor="#0689C3"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.131"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="66dp"
+                    android:layout_height="50dp"
+
+
+                    android:layout_marginTop="80dp"
+                    android:src="@drawable/inom"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.048"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:text="Nombres"
+                    android:textColor="#949494"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/textNameProfile"
+                    app:layout_constraintEnd_toEndOf="@+id/textNameProfile"
+                    app:layout_constraintHorizontal_bias="0.016"
+                    app:layout_constraintStart_toStartOf="@+id/textNameProfile"
+                    app:layout_constraintTop_toBottomOf="@+id/textView4"
+                    app:layout_constraintVertical_bias="0.307" />
+
+                <EditText
+                    android:id="@+id/textNameProfile"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="64dp"
+                    android:text=""
+                    android:textColor="#505050"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.02"
+                    app:layout_constraintStart_toEndOf="@+id/imageView3"
+                    app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="66dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="55dp"
+                    android:src="@drawable/inom"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView3"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/imageView3"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+                <TextView
+                    android:id="@+id/texApe"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:text="Apellidos"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/textape"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/textape"
+                    app:layout_constraintTop_toBottomOf="@+id/textNameProfile" />
+
+                <EditText
+                    android:id="@+id/textape"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text=""
+                    android:textColor="#505050"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.026"
+                    app:layout_constraintStart_toEndOf="@+id/imageView4"
+                    app:layout_constraintTop_toBottomOf="@+id/texApe" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="66dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="55dp"
+                    android:src="@drawable/icel"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView4"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/imageView4"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+                <TextView
+                    android:id="@+id/texcel"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:text="Celular"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/texttel"
+                    app:layout_constraintHorizontal_bias="0.016"
+                    app:layout_constraintStart_toStartOf="@+id/texttel"
+                    app:layout_constraintTop_toBottomOf="@+id/textape" />
+
+                <EditText
+                    android:id="@+id/texttel"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text=""
+                    android:textColor="#505050"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.02"
+                    app:layout_constraintStart_toEndOf="@+id/imageView5"
+                    app:layout_constraintTop_toBottomOf="@+id/texcel" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="66dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="55dp"
+                    android:src="@drawable/ic_icorreo"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView5"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/imageView5"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+                <TextView
+                    android:id="@+id/texcorreo"
+                    android:layout_width="87dp"
+                    android:layout_height="22dp"
+                    android:layout_marginTop="32dp"
+                    android:text="Correo"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/textcorreo"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/textcorreo"
+                    app:layout_constraintTop_toBottomOf="@+id/texttel" />
+
+                <TextView
+                    android:id="@+id/textcorreo"
+                    android:layout_width="210dp"
+                    android:layout_height="19dp"
+                    android:layout_marginTop="8dp"
+                    android:text=""
+                    android:textColor="#505050"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.027"
+                    app:layout_constraintStart_toEndOf="@+id/imageView6"
+                    app:layout_constraintTop_toBottomOf="@+id/texcorreo" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="66dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="28dp"
+                    android:src="@drawable/ic_idir"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView6"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/imageView6"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+                <TextView
+                    android:id="@+id/texdir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="Dirección"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/textDir"
+                    app:layout_constraintEnd_toEndOf="@+id/textDir"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/textDir"
+                    app:layout_constraintTop_toBottomOf="@+id/textcorreo"
+                    app:layout_constraintVertical_bias="0.391" />
+
+                <EditText
+                    android:id="@+id/textDir"
+                    android:layout_width="215dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="44dp"
+                    android:textSize="14dp"
+                    android:text=""
+                    android:textColor="#505050"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.021"
+                    app:layout_constraintStart_toEndOf="@+id/imageView7"
+                    app:layout_constraintTop_toBottomOf="@+id/textcorreo" />
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="392dp"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider"
+                    app:layout_constraintBottom_toTopOf="@+id/texApe"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textNameProfile" />
+
+                <View
+                    android:id="@+id/divider3"
+                    android:layout_width="389dp"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider"
+                    app:layout_constraintBottom_toTopOf="@+id/texcel"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textape" />
+
+                <View
+                    android:id="@+id/divider4"
+                    android:layout_width="392dp"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider"
+                    app:layout_constraintBottom_toTopOf="@+id/texcorreo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/texttel" />
+
+                <View
+                    android:id="@+id/divider5"
+                    android:layout_width="392dp"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider"
+                    app:layout_constraintBottom_toTopOf="@+id/texdir"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textcorreo" />
+
+                <View
+                    android:id="@+id/divider6"
+                    android:layout_width="392dp"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider"
+                    app:layout_constraintBottom_toTopOf="@+id/SendProfile"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider5"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <Button
+                    android:id="@+id/SendProfile"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="40dp"
+                    android:text="Guardar"
+                    android:textSize="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textDir" />
+
+                <Button
+                    android:id="@+id/EditProfile"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="40dp"
+                    android:text="Editar"
+                    android:textSize="15dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textDir" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</FrameLayout>

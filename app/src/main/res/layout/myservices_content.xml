@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    tools:context=".MainActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="@color/bg_buttons"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/nameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="32dp"
+                    android:fontFamily="@font/nunito_font"
+                    android:layout_marginEnd="120dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/nameTest"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvcitas"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/nameTextView"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/nunito_font"
+                    android:layout_marginBottom="8dp"
+                    android:text="Citas"
+                    android:textColor="#cbcbcb"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/citesValue"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvcitas"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="64"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:id="@+id/categoryTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/nameTextView"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="@font/nunito_font"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="120dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_toEndOf="@+id/tvcitas"
+                    android:text="Categoria"
+                    android:textColor="#cbcbcb"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/categoryValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/categoryTextView"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="120dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/nunito_font"
+                    android:layout_toEndOf="@+id/citesValue"
+                    android:text="Salud"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewBtnDelete"
+        android:layout_width="45dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="12dp"
+        android:backgroundTint="@color/bg_primary"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintTop_toTopOf="@+id/cardView2"
+        >
+
+        <Button
+            android:id="@+id/btndelete"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/bg_primary"
+            android:drawableTop="@drawable/ic_delete"
+            android:padding="0dp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewBtnEdit"
+        android:layout_width="45dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="12dp"
+        android:backgroundTint="@color/bg_primary"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintTop_toTopOf="@+id/cardView2"
+        app:layout_constraintStart_toEndOf="@+id/cardViewBtnDelete">
+
+        <Button
+            android:id="@+id/btnedit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/bg_primary"
+            android:drawableTop="@drawable/ic_edit"
+            android:padding="0dp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewBtnDetails"
+        android:layout_width="45dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="12dp"
+        android:backgroundTint="@color/bg_primary"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintTop_toTopOf="@+id/cardView2"
+        app:layout_constraintStart_toEndOf="@+id/cardViewBtnEdit"
+>
+
+        <Button
+            android:id="@+id/btndetails"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/bg_primary"
+            android:drawableTop="@drawable/ic_details"
+            android:padding="0dp"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewBtnAppointment"
+        android:layout_width="45dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="12dp"
+        android:backgroundTint="@color/bg_primary"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintTop_toTopOf="@+id/cardView2"
+        app:layout_constraintStart_toEndOf="@+id/cardViewBtnDetails"
+        >
+
+        <Button
+            android:id="@+id/btnAppointment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/bg_primary"
+            android:drawableTop="@drawable/ic_timer"
+            android:padding="0dp"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="100dp"
+        android:layout_height="135dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="12dp"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/posterImgeView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/prueba"
+            android:scaleType="centerCrop"/>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

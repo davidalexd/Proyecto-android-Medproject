@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">MedProyect</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_perfil">Perfil</string>
+    <string name="title_myservice">Mis servicios</string>
+    <string name="title_activity_general">activity_general</string>
+    <string name="title_servicos">Servicios y citas</string>
+    <string name="title_service_booking">Reservar Cita</string>
+    <string name="title_checkout">Checkout</string>
+    <string name="title_ticket">Ticket de Cita</string>
+    <string name="title_detail_service">Detalles del servicio</string>
+    <string name="title_detail_duration">60</string>
+    <string name="title_detail_date_create_service">11 de Marzo de 2022</string>
+    <string name="title_detail_service_name">Asesorias judiciales en penales</string>
+    <string name="client_id">255246045600-del062aeno6fam2f55mlmkgemodkmhh9.apps.googleusercontent.com</string>
+    <string name="title_activity_detail_service">Detalles</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="all">TODO</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="payment_method_cash">Pago Efectivo</string>
+    <string name="payment_method_card">Tarjeta de Credito</string>
+    <string name="payment_method_instant">Pago al instante</string>
+    <string name="paypal">Paypal</string>
+    <string name="payment_method_paypal">Paypal</string>
+    <string name="nameTest">Cargando..</string>
+    <string name="descriptionTest">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+    <string-array name="categoriesITems">
+        <item>salud</item>
+        <item>trabajo</item>
+        <item>gaa</item>
+    </string-array>
+
+    <!-- LoginStrings-->
+
+    <string name="LoginBTN">INGRESAR</string>
+
+
+    <!-- RegisterStrings-->
+    <string name="Nombres">Nombres</string>
+    <string name="Apellidos">Apellidos</string>
+    <string name="login_email_hint">Correo</string>
+    <string name="Celular">Celular</string>
+    <string name="login_password_hint">Contraseña</string>
+    <string name="RegisterBTN">REGISTRO</string>
+    <!-- PROFILEStrings-->
+    <string name="UidDato">UidDato</string>
+    <string name="NombresDato">NOMBRES</string>
+    <string name="ApellidosDato">APELLIDOS</string>
+    <string name="CelularDato">CELULAR</string>
+    <string name="Correo">CORREO</string>
+    <string name="DireccionDato">DIRECCION</string>
+    <string name="Actualizar">Actualizar</string>
+    <string name="title_activity_eddit_appointment">EdditAppointment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_my_service">Mis citas</string>
+    <string name="title_appointment_name">Mis Compras</string>
+    <string name="logout">Cerrar Sesion</string>
+    <string name="mis_citas">Mis citas</string>
+
+</resources>

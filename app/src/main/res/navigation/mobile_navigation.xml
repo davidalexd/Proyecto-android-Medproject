@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.medproyect.app.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/navigation_perfil"
+        android:name="com.medproyect.app.ui.perfil.Profile"
+        android:label="@string/title_perfil"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/navigation_myservice"
+        android:name="com.medproyect.app.ui.miservicios.MyServiceFragment"
+        android:label="@string/title_myservice"
+        tools:layout="@layout/fragment_myservice" />
+    <fragment
+        android:id="@+id/navigation_my_appointments"
+        android:name="com.medproyect.app.MyAppintments"
+        android:label="@string/title_appointment_name"
+        tools:layout="@layout/fragment_my_appointments"/>
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.medproyect.app.ui.dashboard.DashFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dash"/>
+</navigation>

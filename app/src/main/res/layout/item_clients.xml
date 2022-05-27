@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dp"
+    android:paddingTop="15dp"
+    android:paddingRight="15dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivProfileClient"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/prueba" />
+
+    <TextView
+        android:id="@+id/tvnameClient"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/ivProfileClient"
+        android:fontFamily="@font/nunito_font"
+        android:letterSpacing="0.03"
+        android:text="Carlos Soto"
+        android:textColor="#949494"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/datePayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvnameClient"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/ivProfileClient"
+        android:fontFamily="@font/nunito_font"
+        android:text="15 Dec - 6:20 AM"
+        android:textColor="#505050"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/nameService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvnameClient"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/datePayment"
+        android:fontFamily="@font/nunito_font"
+        android:text="Salud"
+        android:textColor="#505050"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/tvPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:text="0.00"
+        android:textColor="#505050"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
+
+</RelativeLayout>
